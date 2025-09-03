@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 39 22% 96%; /* #F9F8F6 - Soft Beige */
+    --foreground: 30 10% 25%; /* #4D4540 - Dark Brown */
+    --card: 39 22% 98%; /* Lighter beige for cards */
+    --card-foreground: 30 10% 25%;
+    --popover: 39 22% 98%;
+    --popover-foreground: 30 10% 25%;
+    --primary: 80 15% 45%; /* #6A7365 - Muted Olive Green */
+    --primary-foreground: 39 22% 98%;
+    --secondary: 39 15% 90%; /* #E8E5E2 - Light Grayish Beige */
+    --secondary-foreground: 30 10% 25%;
+    --muted: 39 15% 90%;
+    --muted-foreground: 30 5% 50%;
+    --accent: 40 30% 65%; /* #C4B594 - Muted Gold */
+    --accent-foreground: 30 10% 25%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 39 15% 88%; /* #E3E0DD */
+    --input: 39 15% 88%;
+    --ring: 80 15% 45%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 30 10% 10%; /* #211E1C - Dark Brown */
+    --foreground: 39 15% 90%; /* #E8E5E2 */
+    --card: 30 10% 12%; /* #262321 */
+    --card-foreground: 39 15% 90%;
+    --popover: 30 10% 10%;
+    --popover-foreground: 39 15% 90%;
+    --primary: 80 15% 55%; /* Lighter Olive for dark mode */
+    --primary-foreground: 30 10% 10%;
+    --secondary: 30 10% 18%; /* #36312E */
+    --secondary-foreground: 39 15% 90%;
+    --muted: 30 10% 18%;
+    --muted-foreground: 39 5% 65%;
+    --accent: 40 30% 55%; /* Muted Gold for dark mode */
+    --accent-foreground: 30 10% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 10% 22%; /* #423C38 */
+    --input: 30 10% 22%;
+    --ring: 80 15% 55%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    direction: rtl;
+  }
+}
