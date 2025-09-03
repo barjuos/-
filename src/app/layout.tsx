@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   },
 };
 
-import { Alegreya } from 'next/font/google';
+import { Amiri } from 'next/font/google';
 
-const alegreya = Alegreya({
+const amiri = Amiri({
   subsets: ['arabic', 'latin'],
   weight: ['400', '700'],
-  variable: '--font-alegreya',
+  variable: '--font-amiri',
 });
 
 
@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ar" dir="rtl" className={alegreya.variable} suppressHydrationWarning>
+    <html lang="ar" dir="rtl" className={amiri.variable} suppressHydrationWarning>
       <body className="font-body">
         <Providers>
           {children}
