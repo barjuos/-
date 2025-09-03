@@ -1,8 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
-import { PwaInstaller } from '@/components/PwaInstaller';
-import { ThemeProvider } from '@/components/ThemeProvider';
+import { Providers } from '@/components/providers';
 
 export const metadata: Metadata = {
   title: 'رفيق',
@@ -40,15 +39,10 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl" className={alegreya.variable} suppressHydrationWarning>
       <body className="font-body">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <Providers>
           {children}
-          <Toaster />
-        </ThemeProvider>
+        </Providers>
+        <Toaster />
       </body>
     </html>
   );
